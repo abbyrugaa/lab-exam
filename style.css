@@ -1,0 +1,94 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 1000;
+font-size: 70px;
+}
+.exam {
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+.text1 {
+    color: red;
+    animation: text1 alternate infinite 3s;
+}
+.text2 {
+    color:orange;
+    animation: text2 alternate infinite 3s;
+}
+.text3 {
+    color: yellow;
+    animation: text3 alternate infinite 3s;
+}
+.text4 {
+    color: indigo;
+    animation: text4 alternate infinite 3s;
+}
+
+@keyframes text1 {
+    33%{color:indigo};
+    33%{color: violet};
+    33%{color: lavender};
+
+}
+@keyframes text2 {
+    33%{color: yellow};
+    33%{color: gold};
+    33%{color: lightyellow};
+    
+}
+@keyframes text3 {
+    33%{color: red};
+    33%{color: lightcoral};
+    33%{color: maroon};
+    
+}
+@keyframes text4 {
+    33%{color: rgb(255, 73, 103)};
+    33%{color: blueviolet};
+    33%{color: darkorchid};
+    
+}
+.circle {
+    display: flex;
+    justify-content: center;
+}
+.c1, .c2, .c3 {
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.c1 {
+    background-color: blue;
+    animation: c1 1s alternate ease-in-out infinite;
+}
+.c2 {
+    background-color: orange;
+    animation: c2 1s alternate ease-in-out .2s infinite;
+}
+.c3 {
+    background-color: green;
+    animation: c3 1s alternate ease-in-out .4s infinite;
+}
+@keyframes c1 {
+    50%{
+        background-color: skyblue;
+        height: 150px;
+        width: 150px;
+    }    
+}
+@keyframes c2 {
+    50%{
+        background-color: lightsalmon;
+        height: 150px;
+        width: 150px;
+    }
+}
+@keyframes c3 {
+    50%{
+        background-color: lightgreen;
+        height: 150px;
+        width: 150px;
+    }
+    
+}
